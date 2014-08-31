@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Linear Separability Test in MATLAB : This MATLAB code tests if given set of points are linearly separable using Linear Perceptron.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Linear Separability Test in MATLAB</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/rishirdua/linear-separability-matlab">View on GitHub</a>
+
+          <h1 id="project_title">Linear Separability Test in MATLAB</h1>
+          <h2 id="project_tagline">This MATLAB code tests if given set of points are linearly separable using Linear Perceptron.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/rishirdua/linear-separability-matlab/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/rishirdua/linear-separability-matlab/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="linear-separability-test-in-matlab" class="anchor" href="#linear-separability-test-in-matlab"><span class="octicon octicon-link"></span></a>Linear Separability Test in MATLAB</h1>
+
+<p>This MATLAB code tests if given set of points are linearly separable using Linear Perceptron. Linear Perceptron is guaranteed to find a solution if one exists.
+This approach is not efficient for large dimensions. Computationally the most effective way to decide whether two sets of points are linearly separable is by applying linear programming.</p>
+
+<p>Other solutions:</p>
+
+<ul>
+<li>Find the convex hull for both the X points and the O points separately and check whether any segments of the hulls intersected or whether either hull was enclosed by the other. If the two hulls were found to be totally disjoint the two data-sets would be geometrically separable.</li>
+<li>Using Linear Programming
+Explained very well in <a href="http://www.joyofdata.de/blog/testing-linear-separability-linear-programming-r-glpk/">http://www.joyofdata.de/blog/testing-linear-separability-linear-programming-r-glpk/</a>
+</li>
+</ul><h2>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<p>Rishi Dua <a href="mailto:rishirdua@gmail.com">rishirdua@gmail.com</a></p>
+
+<h2>
+<a name="using-the-code" class="anchor" href="#using-the-code"><span class="octicon octicon-link"></span></a>Using the code</h2>
+
+<ul>
+<li>The example uses libsvm format. If you need to use it for some other format, replace the variables Xtrain and Ytrain. Ytrain must be a (m x 1) matrix consisting of -1 and +1. Xtrain must be an (m x n) matrix. libsvm format is explained in <a href="http://www.csie.ntu.edu.tw/%7Ecjlin/libsvm/">http://www.csie.ntu.edu.tw/~cjlin/libsvm/</a>
+</li>
+<li>Bias term is added automatically.</li>
+<li>The code calls data inseparable if 'maxiter' (default 10000) iterations have been reached. Change it in the code if required.</li>
+</ul><h2>
+<a name="contribute" class="anchor" href="#contribute"><span class="octicon octicon-link"></span></a>Contribute</h2>
+
+<ul>
+<li>Issue Tracker: <a href="https://github.com/rishirdua/linear-separability-matlab">https://github.com/rishirdua/linear-separability-matlab</a>
+</li>
+<li>Source Code: <a href="https://github.com/rishirdua/linear-separability-matlab">https://github.com/rishirdua/linear-separability-matlab</a>
+</li>
+<li>Project page: <a href="http://rishirdua.github.io/linear-separability-matlab">http://rishirdua.github.io/linear-separability-matlab</a>
+</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>This project is licensed under the terms of the MIT license. See LICENCE.txt for details</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Linear Separability Test in MATLAB maintained by <a href="https://github.com/rishirdua">rishirdua</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
